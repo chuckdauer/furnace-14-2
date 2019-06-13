@@ -1,0 +1,223 @@
+//Imports
+@font-face {
+  font-family: 'OpenSansCondensedBold';
+  src:  url('font/OpenSansCondensed-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OpenSansCondensedLight';
+    src:  url('font/OpenSansCondensed-Light.woff') format('woff');
+}
+
+//Variables
+$base-spacing: 1em;
+$font-stack-primary: 'OpenSansCondensedBold';
+$font-stack-accent: 'OpenSansCondensedLight';
+$small: .75em;
+$medium: 1em;
+$large: 2em;
+$x-large: 3em;
+$gray-light: #f0f3f7;
+$gray-medium: #ccced1;
+$gray-dark: #747577;
+$black: #323232;
+$white: #ffffff;
+$red: #ee3e32;
+$yellow: #fbb021;
+$green: #1b8a5a;
+$blue: #1d4877;
+$a-tags: 'a, a:active, a:hover, a:visited';
+
+// Styles
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: $font-stack-primary;
+	font-size: $medium;
+	color: $black;
+	background-color: $white;
+	box-sizing:border-box;
+	overflow-x: hidden;
+}
+
+#{$a-tags} {
+	color: $black;
+	text-decoration: none;
+}
+
+.clearfix {
+	clear: both;
+}
+
+p {
+	font-family: $font-stack-primary;
+	font-size: 36px;
+	color: $black;
+}
+
+.page-links {
+	font-family: $font-stack-accent;
+	font-size: 20px;
+	color: $black;
+	display: inline;
+	position: relative;
+	bottom: 10px;
+	margin: 0px 17.5px 0px 17.5px;
+	left: 105px;
+}
+
+.tradem {
+	font-family: $font-stack-accent;
+	font-size: 20px;
+	color: $white;
+	display: inline;
+	position: relative;
+	top: -25px;
+}
+
+.tradem-sm {
+	font-size: 18px;
+	top: -15px;
+}
+
+.tagline {
+	font-family: $font-stack-accent;
+	font-size: 30px;
+	color: $white;
+	display: inline;
+	position: relative;
+	bottom: 5px;
+}
+
+.tag-end {
+	margin-right:35px;
+}
+
+.accent {
+	font-family: $font-stack-accent;
+	font-size: 30px;
+	color: $black;
+}
+
+.value {
+	font-family: $font-stack-accent;
+	font-size:21px;
+	color: $black;
+	position: relative;
+}
+
+h1 {
+	font-family: $font-stack-primary;
+	font-size: 60px;
+	color: $white;
+	line-height: 100px;
+	display: inline;
+}
+
+.btn {
+	border-radius: 0;
+	//margin: 0px 17.5px 0px 17.5px;
+}
+
+#header {
+	width: 100%;
+	height: 100px;
+	margin:35px 0px 35px 0px;
+	padding: 0px 0px 0px 50px;
+	background-color: $black;
+	
+	.left {
+		width: 50%;
+		margin-left: 35px;
+		float: left;
+	}
+	.right {
+		margin-right: 35px;
+		float: right;
+		line-height: 100px;
+	}
+}
+
+#sections {
+	margin-left: 17.5px;
+	margin-right: 17.5px;
+	min-height: 100%;
+	
+	.section {
+		height: 100%;
+		min-height: 100%;
+		background-color: $gray-light;
+		margin: 0px 17.5px -5px 17.5px;
+		padding: 35px 0px 5px 0px;
+		overflow: hidden;
+					
+		.path-group {
+			display: block;
+			margin: 0 auto;
+			width: 291px;
+			height: 132px;
+			background: url("../img/path-group.png");
+			margin-bottom: 10px;
+		}
+		
+		.path-color {
+			
+			.path-top {z-index: 1; position: absolute;}
+			.path-bottom {z-index: 2; position: absolute;}
+			.path-left {z-index: 3; position: absolute;}
+			.path-middle {z-index: 4; position: absolute;}
+			.path-right {z-index: 5; position: absolute;}
+		}
+		
+		hr {
+			width: 75%;
+		}
+		
+		p {
+			text-align: center;
+			line-height: .5em;
+		}
+	}
+	
+	#temp {
+		
+		.path-group {
+			
+			//values
+			.p1, .p4, .p7, .p10 {top: 104px;left: 85px;}
+			.p2, .p5, .p8, .p11 {top: 104px; left: 115px;}
+			.p3, .p6, .p9, .p12 {top: 104px; left: 137px;}
+			.p13, .p15, .p17, .p19 {top: 49px; right: 110px;}
+			.p14, .p16, .p18, .p20 {top: 15px; right: 135px;}	
+		}
+	}
+	
+	.o2 {
+		
+		.path-group {
+			
+			.p1, .p4, .p7, .p10 {top: 104px;left: 90px;}
+			.p2, .p5, .p8, .p11 {top: 104px; left: 133px;}
+			.p3, .p6, .p9, .p12 {top: 104px; left: 167px;}
+			.p13, .p15, .p17, .p19 {top: 49px; right: 67px;}
+			.p14, .p16, .p18, .p20 {top: 15px; right: 78px;}
+		}
+	}
+	.co {
+		
+		.path-group {
+			
+			.p1, .p4, .p7, {top: 104px;left: 98px;}
+			.p10 {top: 104px;left: 92px;}
+			.p2, .p5, .p8 {top: 104px; left: 153px;}
+			.p11 {top: 104px; left: 140px;}
+			.p3, .p6, .p9 {top: 104px; left: 200px;}
+			.p12 {top: 104px; left: 188px;}
+			.p13, .p15, .p17 {top: 49px; right: 21px;}
+			.p19 {top: 49px; right: 34px;}
+			.p14, .p16, .p18 {top: 15px; right: 22px;}
+			.p20 {top: 15px; right: 34px;}
+		}
+	}
+}
