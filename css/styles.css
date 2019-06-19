@@ -27,6 +27,12 @@ p {
   font-size: 36px;
   color: #323232; }
 
+.set {
+  font-family: "OpenSansCondensedBold";
+  font-size: 20px;
+  color: #323232;
+  height: 5px; }
+
 .page-links {
   font-family: "OpenSansCondensedLight";
   font-size: 20px;
@@ -65,6 +71,16 @@ p {
   font-size: 30px;
   color: #323232; }
 
+.single-line {
+  display: inline;
+  cursor: pointer; }
+
+.accent-sm {
+  font-family: "OpenSansCondensedLight";
+  font-size: 24px;
+  color: #323232;
+  margin-bottom: 35px; }
+
 .value {
   font-family: "OpenSansCondensedLight";
   font-size: 21px;
@@ -100,8 +116,19 @@ h1 {
   margin-left: 17.5px;
   margin-right: 17.5px;
   min-height: 100%; }
+  #sections .bottom {
+    position: absolute;
+    bottom: 35px;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; }
+  #sections canvas {
+    width: 500px !important;
+    height: auto !important;
+    margin: 0 auto; }
   #sections .section {
-    height: 100%;
+    height: 750px;
     min-height: 100%;
     background-color: #f0f3f7;
     margin: 0px 17.5px -5px 17.5px;
@@ -149,48 +176,70 @@ h1 {
   #sections #temp .path-group .p14, #sections #temp .path-group .p16, #sections #temp .path-group .p18, #sections #temp .path-group .p20 {
     top: 15px;
     right: 135px; }
-  #sections .o2 .path-group .p1, #sections .o2 .path-group .p4, #sections .o2 .path-group .p7, #sections .o2 .path-group .p10 {
+  #sections #oxygen .path-group .p1, #sections #oxygen .path-group .p4, #sections #oxygen .path-group .p7, #sections #oxygen .path-group .p10 {
     top: 104px;
     left: 90px; }
-  #sections .o2 .path-group .p2, #sections .o2 .path-group .p5, #sections .o2 .path-group .p8, #sections .o2 .path-group .p11 {
+  #sections #oxygen .path-group .p2, #sections #oxygen .path-group .p5, #sections #oxygen .path-group .p8, #sections #oxygen .path-group .p11 {
     top: 104px;
     left: 133px; }
-  #sections .o2 .path-group .p3, #sections .o2 .path-group .p6, #sections .o2 .path-group .p9, #sections .o2 .path-group .p12 {
+  #sections #oxygen .path-group .p3, #sections #oxygen .path-group .p6, #sections #oxygen .path-group .p9, #sections #oxygen .path-group .p12 {
     top: 104px;
     left: 167px; }
-  #sections .o2 .path-group .p13, #sections .o2 .path-group .p15, #sections .o2 .path-group .p17, #sections .o2 .path-group .p19 {
+  #sections #oxygen .path-group .p13, #sections #oxygen .path-group .p15, #sections #oxygen .path-group .p17, #sections #oxygen .path-group .p19 {
     top: 49px;
     right: 67px; }
-  #sections .o2 .path-group .p14, #sections .o2 .path-group .p16, #sections .o2 .path-group .p18, #sections .o2 .path-group .p20 {
+  #sections #oxygen .path-group .p14, #sections #oxygen .path-group .p16, #sections #oxygen .path-group .p18, #sections #oxygen .path-group .p20 {
     top: 15px;
     right: 78px; }
-  #sections .co .path-group .p1, #sections .co .path-group .p4, #sections .co .path-group .p7 {
+  #sections #monoxide .path-group .p1, #sections #monoxide .path-group .p4, #sections #monoxide .path-group .p7 {
     top: 104px;
     left: 98px; }
-  #sections .co .path-group .p10 {
+  #sections #monoxide .path-group .p10 {
     top: 104px;
     left: 92px; }
-  #sections .co .path-group .p2, #sections .co .path-group .p5, #sections .co .path-group .p8 {
+  #sections #monoxide .path-group .p2, #sections #monoxide .path-group .p5, #sections #monoxide .path-group .p8 {
     top: 104px;
     left: 153px; }
-  #sections .co .path-group .p11 {
+  #sections #monoxide .path-group .p11 {
     top: 104px;
     left: 140px; }
-  #sections .co .path-group .p3, #sections .co .path-group .p6, #sections .co .path-group .p9 {
+  #sections #monoxide .path-group .p3, #sections #monoxide .path-group .p6, #sections #monoxide .path-group .p9 {
     top: 104px;
     left: 200px; }
-  #sections .co .path-group .p12 {
+  #sections #monoxide .path-group .p12 {
     top: 104px;
     left: 188px; }
-  #sections .co .path-group .p13, #sections .co .path-group .p15, #sections .co .path-group .p17 {
+  #sections #monoxide .path-group .p13, #sections #monoxide .path-group .p15, #sections #monoxide .path-group .p17 {
     top: 49px;
     right: 21px; }
-  #sections .co .path-group .p19 {
+  #sections #monoxide .path-group .p19 {
     top: 49px;
     right: 34px; }
-  #sections .co .path-group .p14, #sections .co .path-group .p16, #sections .co .path-group .p18 {
+  #sections #monoxide .path-group .p14, #sections #monoxide .path-group .p16, #sections #monoxide .path-group .p18 {
     top: 15px;
     right: 22px; }
-  #sections .co .path-group .p20 {
+  #sections #monoxide .path-group .p20 {
     top: 15px;
     right: 34px; }
+  #sections #burner #burner-lg {
+    background: url("../img/burner-outline.png") no-repeat top center;
+    height: 360px;
+    padding: 65px 210px; }
+  #sections #burner #wall-burners {
+    padding: 0px 35px; }
+    #sections #burner #wall-burners .wall-burner {
+      height: 75px;
+      width: 75px;
+      background: url("../img/wall-burner.png") no-repeat top center;
+      display: inline-block;
+      margin: 17px 17px;
+      padding: 16px 22px; }
+  #sections #burner #floor-burners {
+    padding: 0px 35px; }
+    #sections #burner #floor-burners .floor-burner {
+      height: 100px;
+      width: 100px;
+      background: url("../img/floor-burner.png") no-repeat top center;
+      display: inline-block;
+      margin: 17px 17px;
+      padding: 28px 40px; }

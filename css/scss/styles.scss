@@ -56,6 +56,13 @@ p {
 	color: $black;
 }
 
+.set {
+	font-family: $font-stack-primary;
+	font-size: 20px;
+	color: $black;
+	height: 5px;
+}
+
 .page-links {
 	font-family: $font-stack-accent;
 	font-size: 20px;
@@ -100,6 +107,18 @@ p {
 	color: $black;
 }
 
+.single-line {
+	display: inline;
+	cursor: pointer;
+}
+
+.accent-sm {
+	font-family: $font-stack-accent;
+	font-size: 24px;
+	color: $black;
+	margin-bottom: 35px;
+}
+
 .value {
 	font-family: $font-stack-accent;
 	font-size:21px;
@@ -117,7 +136,6 @@ h1 {
 
 .btn {
 	border-radius: 0;
-	//margin: 0px 17.5px 0px 17.5px;
 }
 
 #header {
@@ -144,8 +162,23 @@ h1 {
 	margin-right: 17.5px;
 	min-height: 100%;
 	
+	.bottom {
+		position: absolute;
+		bottom: 35px;
+		top: 87%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width:100%;
+	}
+	
+	canvas {
+		width: 500px!important;
+		height: auto!important;
+		margin: 0 auto;
+	}
+	
 	.section {
-		height: 100%;
+		height: 750px;
 		min-height: 100%;
 		background-color: $gray-light;
 		margin: 0px 17.5px -5px 17.5px;
@@ -192,8 +225,7 @@ h1 {
 			.p14, .p16, .p18, .p20 {top: 15px; right: 135px;}	
 		}
 	}
-	
-	.o2 {
+	#oxygen {
 		
 		.path-group {
 			
@@ -204,7 +236,7 @@ h1 {
 			.p14, .p16, .p18, .p20 {top: 15px; right: 78px;}
 		}
 	}
-	.co {
+	#monoxide {
 		
 		.path-group {
 			
@@ -218,6 +250,45 @@ h1 {
 			.p19 {top: 49px; right: 34px;}
 			.p14, .p16, .p18 {top: 15px; right: 22px;}
 			.p20 {top: 15px; right: 34px;}
+		}
+	}
+	#burner {
+		
+		#burner-lg {
+			background: url("../img/burner-outline.png") no-repeat top center;
+			height: 360px;
+			padding: 65px 210px;
+			
+			.burner-value {
+				
+			}
+		}
+		
+		#wall-burners {
+			padding: 0px 35px;
+			
+			.wall-burner {
+				height: 75px;
+				width: 75px;
+				background: url("../img/wall-burner.png") no-repeat top center;
+				display: inline-block;
+				margin: 17px 17px;
+				padding: 16px 22px;
+			}
+		}
+		
+		#floor-burners {
+			padding: 0px 35px;
+			
+			
+			.floor-burner {
+				height: 100px;
+				width: 100px;
+				background: url("../img/floor-burner.png") no-repeat top center;
+				display: inline-block;
+				margin: 17px 17px;
+				padding: 28px 40px;
+			}
 		}
 	}
 }

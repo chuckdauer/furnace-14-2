@@ -21,10 +21,6 @@
 	$conn = null;
 	$data = json_decode($json, true);
 	
-	// echo "<pre>";
-    //echo $data;
-    //echo "<pre>";
-	
 	$blue = "filter: invert(25%) sepia(6%) saturate(6590%) hue-rotate(173deg) brightness(97%) contrast(93%);";
 	$green = "filter: invert(39%) sepia(69%) saturate(439%) hue-rotate(102deg) brightness(97%) contrast(96%);";
 	$yellow = "filter: invert(79%) sepia(52%) saturate(3136%) hue-rotate(343deg) brightness(106%) contrast(97%);";
